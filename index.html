@@ -1044,6 +1044,26 @@ images/Profile.jpg
 }
 
 
+
+
+/* =====================================================
+   DIATHOFLOW CASE STUDY
+===================================================== */
+.diathoflow-case-study{background:linear-gradient(135deg,#f8fafc,#ecfeff)}
+.diathoflow-hero{max-width:980px;margin:0 auto 45px;padding:38px;background:var(--dark);color:white;border-radius:22px;box-shadow:0 25px 60px rgba(7,17,31,.18)}
+.diathoflow-hero h3{color:white;font-size:30px;margin:10px 0 12px}
+.diathoflow-hero p{color:#cbd5e1;margin-bottom:12px}
+.diathoflow-status{display:inline-block;padding:7px 12px;border-radius:30px;background:rgba(245,158,11,.14);color:var(--gold);font-size:12px;font-weight:800;letter-spacing:1px}
+.diathoflow-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:980px;margin:auto}
+.diathoflow-card{background:white;padding:28px;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.diathoflow-card h3{color:var(--primary);margin-bottom:12px}
+.diathoflow-card p,.diathoflow-card li{color:var(--muted);font-size:14px}
+.diathoflow-card ul{padding-left:20px}.diathoflow-card li{margin-bottom:7px}
+.diathoflow-security{border-top:4px solid var(--gold)}
+.diathoflow-process{max-width:980px;margin:30px auto 0;padding:28px;border-radius:16px;background:var(--dark2);color:white}
+.diathoflow-process h3{color:white;margin-bottom:10px}.diathoflow-process p{color:#cbd5e1;font-size:14px}
+@media(max-width:600px){.diathoflow-grid{grid-template-columns:1fr}.diathoflow-hero{padding:25px}}
+
 /* =====================================================
    DRAWINGS
 ===================================================== */
@@ -1748,6 +1768,8 @@ footer {
             <li><a href="#skills">Skills</a></li>
 
             <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#diathoflow">DiathoFlow</a></li>
 
             <li><a href="#drawings">Drawings</a></li>
 
@@ -2670,6 +2692,37 @@ footer {
 
     </div>
 
+</section>
+
+
+
+
+<!-- =====================================================
+     DIATHOFLOW CASE STUDY
+===================================================== -->
+<section class="diathoflow-case-study" id="diathoflow">
+<div class="container">
+<div class="section-heading reveal">
+<span class="tag">Featured Digital Project</span>
+<h2>DiathoFlow</h2>
+<p>A real-world QS Consulting Company Command Center designed, developed, tested and deployed for Diatho Consulting.</p>
+</div>
+<div class="diathoflow-hero reveal">
+<span class="diathoflow-status">DEPLOYED • HANDED OVER • CURRENTLY IN USE</span>
+<h3>From construction knowledge to a working business platform</h3>
+<p>I identified the need to bring fragmented business processes into one operational system and independently designed and developed DiathoFlow around the workflows of a Quantity Surveying and construction consulting company.</p>
+<p>The platform was handed over to Diatho Consulting in 2026 and is currently being used for company operations.</p>
+</div>
+<div class="diathoflow-grid">
+<div class="diathoflow-card reveal"><h3><i class="fas fa-bullseye"></i> The Problem</h3><p>QS consulting operations can become fragmented across spreadsheets, documents, messages, project records and separate administrative processes. DiathoFlow was created to give management one operational view of the business.</p></div>
+<div class="diathoflow-card reveal"><h3><i class="fas fa-layer-group"></i> What I Built</h3><ul><li>Command Centre dashboard</li><li>Project and employee management</li><li>Tender management and tracking</li><li>BOQ import and commercial workflows</li><li>Cost control and payment certificates</li><li>MoMs, actions, documents and reporting</li><li>Internal Chatbox and presence</li><li>Operational intelligence and early-warning concepts</li></ul></div>
+<div class="diathoflow-card diathoflow-security reveal"><h3><i class="fas fa-shield-halved"></i> Security Was a Priority</h3><p>Security was treated as a core engineering requirement, not a final checklist item. I repeatedly tested role boundaries, authorization, data relationships and cross-project access while developing the system.</p><ul><li>Role-based access controls</li><li>Authentication and authorization validation</li><li>Cross-user and cross-project access testing</li><li>API and relationship-level authorization checks</li><li>Regression testing after security fixes</li><li>End-to-end scenario diagnostics before handover</li></ul></div>
+<div class="diathoflow-card reveal"><h3><i class="fas fa-vial"></i> Testing & Reliability</h3><p>The application went through repeated build verification, end-to-end scenarios, relationship lifecycle diagnostics, regression testing and targeted bug fixing. The goal was to verify that interconnected workflows continued working after changes rather than only testing individual screens.</p></div>
+<div class="diathoflow-card reveal"><h3><i class="fas fa-brain"></i> Intelligence Direction</h3><p>DiathoFlow is being developed beyond basic CRUD workflows. Its intelligence layer is designed around project health, workload visibility, trend detection, early warnings, explanations and next-best-action recommendations.</p></div>
+<div class="diathoflow-card reveal"><h3><i class="fas fa-code"></i> Technical Development</h3><p>I worked across the frontend, backend, database, authentication, business logic, diagnostics and deployment process, translating real QS and construction requirements into a functioning web application.</p></div>
+</div>
+<div class="diathoflow-process reveal"><h3>My Development Process</h3><p>CHANGE → BUILD → TEST → DIAGNOSE → COMMIT → PUSH → VERIFY</p><p>This process helped me make controlled changes, test the impact across interconnected workflows, diagnose regressions, protect existing functionality and verify the system before release.</p></div>
+</div>
 </section>
 
 
