@@ -1065,6 +1065,99 @@ images/Profile.jpg
 @media(max-width:600px){.diathoflow-grid{grid-template-columns:1fr}.diathoflow-hero{padding:25px}}
 
 /* =====================================================
+   DIATHOFLOW SCREENSHOT GALLERY
+===================================================== */
+.diathoflow-gallery{
+    max-width:1180px;
+    margin:55px auto 0;
+}
+.diathoflow-gallery-intro{
+    max-width:760px;
+    margin:0 auto 28px;
+    text-align:center;
+}
+.diathoflow-gallery-intro h3{
+    font-size:28px;
+    margin-bottom:8px;
+}
+.diathoflow-gallery-intro p{
+    color:var(--muted);
+    font-size:14px;
+}
+.diathoflow-screenshot-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+.diathoflow-screenshot-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+.diathoflow-screenshot-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 25px 55px rgba(7,17,31,.14);
+}
+.diathoflow-screenshot-image{
+    height:300px;
+    background:#0b1726;
+    overflow:hidden;
+    cursor:pointer;
+}
+.diathoflow-screenshot-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.45s;
+}
+.diathoflow-screenshot-card:hover .diathoflow-screenshot-image img{
+    transform:scale(1.035);
+}
+.diathoflow-screenshot-info{
+    padding:22px 24px 24px;
+}
+.diathoflow-screenshot-info h3{
+    margin-bottom:7px;
+    font-size:19px;
+}
+.diathoflow-screenshot-info p{
+    color:var(--muted);
+    font-size:14px;
+}
+.diathoflow-screenshot-label{
+    display:inline-block;
+    margin-bottom:10px;
+    color:var(--primary);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+}
+.diathoflow-screenshot-security{
+    border-top:4px solid var(--gold);
+}
+.diathoflow-gallery-note{
+    max-width:980px;
+    margin:24px auto 0;
+    padding:18px 20px;
+    border-left:4px solid var(--primary);
+    border-radius:10px;
+    background:#f8fafc;
+    color:var(--muted);
+    font-size:13px;
+}
+@media(max-width:900px){
+    .diathoflow-screenshot-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+    .diathoflow-gallery{margin-top:40px}
+    .diathoflow-screenshot-image{height:240px}
+}
+
+/* =====================================================
    DRAWINGS
 ===================================================== */
 
@@ -2722,6 +2815,110 @@ footer {
 <div class="diathoflow-card reveal"><h3><i class="fas fa-code"></i> Technical Development</h3><p>I worked across the frontend, backend, database, authentication, business logic, diagnostics and deployment process, translating real QS and construction requirements into a functioning web application.</p></div>
 </div>
 <div class="diathoflow-process reveal"><h3>My Development Process</h3><p>CHANGE → BUILD → TEST → DIAGNOSE → COMMIT → PUSH → VERIFY</p><p>This process helped me make controlled changes, test the impact across interconnected workflows, diagnose regressions, protect existing functionality and verify the system before release.</p></div>
+</div>
+
+<div class="diathoflow-gallery reveal">
+    <div class="diathoflow-gallery-intro">
+        <span class="tag">System Interface</span>
+        <h3>Inside DiathoFlow</h3>
+        <p>A selection of interface views showing how the platform brings construction and Quantity Surveying operations into one working environment.</p>
+    </div>
+
+    <div class="diathoflow-screenshot-grid">
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/Command Center.png')">
+                <img src="images/diathoflow/screenshots/Command Center.png" alt="DiathoFlow Command Centre interface" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Operations</span>
+                <h3>Command Centre</h3>
+                <p>The central operational view designed to give management visibility across business activity and project information.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/Dashboard.png')">
+                <img src="images/diathoflow/screenshots/Dashboard.png" alt="DiathoFlow dashboard" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Dashboard</span>
+                <h3>Operational Dashboard</h3>
+                <p>High-level visibility into the operational state of projects, work and business activity.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/My Work.png')">
+                <img src="images/diathoflow/screenshots/My Work.png" alt="DiathoFlow My Work workspace" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Work Management</span>
+                <h3>My Work</h3>
+                <p>A focused workspace for tracking assigned work and keeping individual responsibilities connected to the wider operation.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/Commecial Spin.png')">
+                <img src="images/diathoflow/screenshots/Commecial Spin.png" alt="DiathoFlow commercial and cost control interface" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Commercial</span>
+                <h3>Commercial / Cost Control</h3>
+                <p>Commercial workflows built around the cost-control requirements of a Quantity Surveying environment.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/Callender.png')">
+                <img src="images/diathoflow/screenshots/Callender.png" alt="DiathoFlow calendar interface" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Planning</span>
+                <h3>Calendar</h3>
+                <p>Scheduling and date-driven operational information brought into the same command environment.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/Reports.png')">
+                <img src="images/diathoflow/screenshots/Reports.png" alt="DiathoFlow reporting interface" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Reporting</span>
+                <h3>Reports</h3>
+                <p>Operational reporting that helps turn system information into a clearer management view.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/ChatBox.png')">
+                <img src="images/diathoflow/screenshots/ChatBox.png" alt="DiathoFlow internal Chatbox" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Communication</span>
+                <h3>Internal Chatbox</h3>
+                <p>Internal communication and presence functionality built into the operational platform.</p>
+            </div>
+        </article>
+
+        <article class="diathoflow-screenshot-card diathoflow-screenshot-security">
+            <div class="diathoflow-screenshot-image" onclick="openImage('images/diathoflow/screenshots/Log in.png')">
+                <img src="images/diathoflow/screenshots/Log in.png" alt="DiathoFlow secure login interface" loading="lazy">
+            </div>
+            <div class="diathoflow-screenshot-info">
+                <span class="diathoflow-screenshot-label">Security</span>
+                <h3>Authentication</h3>
+                <p>The entry point to a role-based system where authentication and authorization were treated as core engineering requirements.</p>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="diathoflow-gallery-note">
+        <strong>Engineering focus:</strong> the interface is only one part of the project. The case study above documents the security, testing, diagnostics and development process behind the working platform.
+    </div>
 </div>
 </section>
 
